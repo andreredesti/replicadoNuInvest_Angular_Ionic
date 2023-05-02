@@ -1,25 +1,44 @@
 <html>
   <head>
     <!--title>My app</title-->
-
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>
-          Header
-        </ion-title>
-      </ion-toolbar>
-    </ion-header>
   </head>
   <body>
-    <my-app>Loading...</my-app>
-    <ion-content class="ion-padding">
-      <h1>Conhecendo o Angular com o Ionic</h1>
-          
-      <p>Here's a small text description for the content. Nothing more, nothing less.</p>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Minha Aplicação Mobile</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
+    <ion-content class="ion-padding">
+      <h1>Conteudo da aplicação</h1>
+
+      <ion-button>Botão Default</ion-button>
+      <br />
+      <!--
+        <ion-button [disabled]="true">Disabled</ion-button>
+        -->
+      <p>Botão expandido - Falta ver o CSS</p>
+      <ion-button expand="block">Block</ion-button>
+      <ion-button expand="full">Full</ion-button>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
       
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+      </ion-card>
+
 
     </ion-content>
-
+    <br />
+    <ion-footer>
+      <ion-toolbar>
+        <ion-title>Footer</ion-title>
+      </ion-toolbar>
+    </ion-footer>
   </body>
 </html>
